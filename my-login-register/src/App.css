@@ -1,0 +1,8 @@
+* {
+  background-image: url('../public/image.png');
+  background-size: cover; /* Resmi elemente sığacak şekilde büyütür */
+  background-position: center; /* Resmi merkeze hizalar */
+  background-repeat: no-repeat; /* Görüntünün tekrarlanmasını önler */
+  height: 100vh; /* Ekran yüksekliği kadar yer kaplar */
+  width: 100%; 
+}
