@@ -1,4 +1,4 @@
-.all-container {
+body {
   background-image: url("../public/image.png");
   background-size: cover;
   background-position: center;
@@ -137,7 +137,68 @@ input:focus {
   align-items: center;
   justify-content: center;
   position: relative;
-  bottom: 100px;
+  bottom: 50px;
   font-size: 24px;
   font-weight: 900;
+}
+.forget-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#remember-checkbox {
+  margin-right: 8px;
+}
+
+.remember-span {
+  font-size: 16px;
+  font-weight: 100;
+  white-space: nowrap;
+  color: #4a235a;
+}
+.forget-password {
+  font-size: 16px;
+  font-weight: 100;
+  white-space: nowrap;
+  color: #4a235a;
+}
+.text-container {
+  display: flex;
+  gap: 60px;
+}
+
+input::placeholder {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-size: 16px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.login-button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginButton {
+  width: 280px;
+  height: 40px;
+  border-radius: 10px;
+  background-image: linear-gradient(#421e55, #877292);
+  border: 1px solid #ccc4d0;
+  color: #ffffff;
+  font-size: 16px;
+}
+.accounted-required {
+  display: flex;
+  margin-top: 10px;
+  gap: 20px;
+  font-size: 15px;
+  font-weight: 900;
+  color: #4a235a;
 }

@@ -35,9 +35,26 @@ function App() {
           </div>
           <div className="loginText">Login</div>
           <div className="input-container">
-            <input></input>
+            <input type="text" placeholder="Email" required></input>
 
-            <input></input>
+            <input type="password" placeholder="Password" required></input>
+          </div>
+
+          <div className="forget-container">
+            <input type="checkbox" id="remember-checbox"></input>
+            <div className="text-container">
+              <span className="remember-span">Remember Me</span>
+              <a className="forget-password">Forget Password?</a>
+            </div>
+          </div>
+          <div className="login-button">
+            <button type="button" className="loginButton">
+              Login
+            </button>
+          </div>
+          <div className="accounted-required">
+            <a>Don’t have a accounted? </a>
+            <a>Register </a>
           </div>
         </div>
       )}
