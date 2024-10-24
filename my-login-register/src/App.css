@@ -107,30 +107,47 @@ body {
   align-items: center;
 }
 .input-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 40px;
-  width: 100%;
+  position: relative;
+  width: 80%;
+  margin-bottom: 20px;
 }
 
-input {
+.input-container i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #240f39;
+}
+
+.input-container input {
   width: 80%;
   padding: 10px;
+  padding-left: 40px;
   border: none;
   border-bottom: 1px solid #240f39;
-  background-color: #ffffff00;
+  background-color: transparent;
 }
+
 input:focus {
   outline: none;
-  width: 80%;
+  width: 91%;
   padding: 10px;
   border: none;
   border-bottom: 1px solid #240f39;
   background-color: #ffffff00;
 }
-
+.loginText-Register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 20px;
+  font-size: 24px;
+  font-weight: 900;
+}
 .loginText {
   display: flex;
   flex-direction: column;
@@ -146,11 +163,25 @@ input:focus {
   align-items: center;
   margin-top: 20px;
 }
+.forget-containerRegister {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80%;
+}
 
 #remember-checkbox {
   margin-right: 8px;
 }
-
+.remember-spanRegister {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 12px;
+  font-weight: 100;
+  white-space: nowrap;
+  color: #4a235a;
+}
 .remember-span {
   font-size: 16px;
   font-weight: 100;
@@ -201,4 +232,15 @@ input::placeholder {
   font-size: 15px;
   font-weight: 900;
   color: #4a235a;
+}
+.accounted-required-register {
+  display: flex;
+  margin-top: 10px;
+  gap: 20px;
+  font-size: 15px;
+  font-weight: 100;
+  color: #4a235a;
+}
+.none-underline {
+  text-decoration: none;
 }
